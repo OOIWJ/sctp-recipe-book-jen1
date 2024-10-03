@@ -256,7 +256,7 @@ async function main() {
 
     //Lab 5| Adding a Update Route
     //Step 1| Add a PUT route for recipes
-    app.put('/post/recipe/:id', async (req, res) => {
+    app.put('/recipe/:id', async (req, res) => {
         try {
             const recipeId = req.params.id;
             const { name, cuisine, prepTime, cookTime, servings, ingredients, instructions, tags } = req.body;
